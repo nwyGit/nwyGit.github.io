@@ -1,0 +1,208 @@
+/**
+ * WEB222 – Final Assignment
+ *
+ * I declare that this assignment is my own work in accordance with
+ * Seneca Academic Policy. No part of this assignment has been
+ * copied manually or electronically from any other source
+ * (including web sites) or distributed to other students.
+ *
+ * Please update the following with your information:
+ *
+ *      Name:       <Wai Yan Ng>
+ *      Student ID: <149637217>
+ *      Date:       <10 Aug 2022>
+ */
+/* Basics */
+html {
+	font-size: 62.5%;
+	font-family: "Ubuntu";
+}
+body {
+	font-size: 1.8rem;
+	max-width: 1024px;
+	margin: auto;
+	padding: 70px;
+	background-color: #c4e7e9;
+}
+h1 {
+	font-size: 2.35em;
+}
+h2 {
+	font-size: 2em;
+}
+h3 {
+	font-size: 1.75em;
+}
+h4 {
+	font-size: 1.5em;
+}
+h5 {
+	font-size: 1.25em;
+}
+h6 {
+	font-size: 1em;
+}
+p {
+	margin-top: 0px;
+	margin-bottom: 2.5rem;
+}
+/* Common of infographic and education */
+section {
+	max-width: 95%;
+	margin: 0 auto;
+}
+section#infographic,
+section#education article,
+section#contactMe {
+	display: flex;
+	border-radius: 10px;
+	background-color: white;
+	box-shadow: rgba(89, 94, 100, 0.3) 0px 8px 24px;
+}
+section h4 {
+	text-align: center;
+}
+section h5 {
+	margin: 20px 0;
+}
+section#introduction button,
+section#education span {
+	display: block;
+}
+/* Introduction */
+.selfie {
+	border-radius: 30px;
+	max-width: 500px;
+}
+section#introduction {
+	text-align: center;
+	margin: 0 auto;
+}
+section#introduction button {
+	margin: 30px 10px;
+	display: inline-block;
+}
+/* Infographic */
+section#infographic article {
+	margin: 20px;
+}
+section#infographic #aboutMe {
+	max-width: 50%;
+}
+section#infographic span.attributes {
+	display: inline-block;
+	font-weight: bold;
+}
+section#infographic article#aboutMe span.attributes {
+	min-width: 50px;
+}
+section#infographic article#basicInfo span {
+	margin: 5px 0;
+}
+section#infographic article#basicInfo span.attributes {
+	min-width: 120px;
+}
+/* Education */
+section#education article {
+	margin-bottom: 30px;
+}
+section#education div {
+	margin: 20px;
+}
+section#education span {
+	margin: 10px 0;
+}
+.logo {
+	max-width: 150px;
+	max-height: 150px;
+}
+/* Contact Me */
+section#contactMe {
+	margin-top: 70px;
+	width: fit-content;
+	padding: 30px;
+	justify-content: center;
+	align-items: center;
+}
+section#contactMe h4 {
+	margin-top: 10px;
+}
+section#contactMe label,
+section#contactMe span {
+	font-size: smaller;
+}
+section#contactMe span {
+	display: block;
+	margin: 5px 0;
+}
+section#contactMe #contactInfo .row {
+	display: flex;
+}
+section#contactMe #contactInfo label,
+section#contactMe #contactInfo input,
+section#contactMe #contactInfo select {
+	margin: 3px 0;
+	min-width: 150px;
+	max-width: 158px;
+}
+/* Responsive */
+@media (max-width: 400px) {
+	section#contactMe {
+		width: calc(100% - 4.5em);
+	}
+}
+@media screen and (max-width: 770px) {
+	body {
+		margin-top: 30px;
+		padding: 10px;
+	}
+	/* Introduction */
+	.selfie {
+		max-width: 95%;
+	}
+	/* Infographic */
+	section#infographic {
+		display: block;
+	}
+	section#infographic #aboutMe {
+		max-width: 100%;
+	}
+	section#infographic article#basicInfo span.attributes {
+		min-width: 100px;
+	}
+	/* Education */
+	.logo {
+		max-width: 50px;
+		max-height: 50px;
+	}
+	/* ContactMe */
+	section#contactMe {
+		max-width: 95%;
+	}
+	section#contactMe span {
+		display: block;
+	}
+	section#contactMe #contactInfo label,
+	section#contactMe #contactInfo input,
+	section#contactMe #contactInfo select {
+		min-width: 140px;
+		max-width: 153px;
+	}
+	section#contactMe textarea {
+		width: calc(100% - 0.75em);
+	}
+}
+/* hidden */
+.hidden {
+	display: none;
+}
+/* Error */
+.error {
+	border-color: #900;
+	background-color: #fdd;
+}
+section#contactMe .errorMsg {
+	font-size: 1.3rem;
+	color: red;
+	margin: 5px 0 0 10px;
+}

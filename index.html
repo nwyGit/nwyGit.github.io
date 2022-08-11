@@ -1,0 +1,267 @@
+<!--
+WEB222 – Final Assignment
+ 
+I declare that this assignment is my own work in accordance with
+Seneca Academic Policy. No part of this assignment has been
+copied manually or electronically from any other source
+(including web sites) or distributed to other students.
+ 
+Please update the following with your information:
+ 
+Name:       <Wai Yan Ng>
+Student ID: <149637217>
+Date:       <10 Aug 2022>
+-->
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Profile website</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="./css/style.css" type="text/css" />
+	</head>
+	<body>
+		<!-- Introduction -->
+		<section id="introduction">
+			<article>
+				<img src="./img/selfie.jpg" alt="selfie" class="selfie" />
+				<h1>Raymond Ng</h1>
+				<span>Web Developer, Software Engineer, Landscape designer</span>
+				<div>
+					<button>
+						<a href="./doc/resume.pdf" download>Resume</a>
+					</button>
+					<button><a href="#contactMe">Contact Me</a></button>
+				</div>
+			</article>
+		</section>
+		<!-- Infographic -->
+		<section id="infographic">
+			<article id="aboutMe">
+				<h5>About Me and Academic Honesty</h5>
+				<p>
+					I am a full-stack Engineer who also acquire design skills in landscape
+					aspect.
+				</p>
+				<p>
+					I declare that my assessment is wholly my own work in accordance with
+					Seneca Academic Policy. No part of this assessment has been copied
+					manually or electronically from any other source (including web sites)
+					except for the information supplied by the WEB222 instructors and / or
+					made available in this assessment for my use. I also declare that no
+					part of this assignment has been distributed to other students.
+				</p>
+				<div>
+					<span class="attributes">Date:</span>
+					<span>9 Aug 2022</span>
+				</div>
+			</article>
+			<article id="basicInfo">
+				<h5>Basic Information</h5>
+				<div>
+					<span class="attributes">Name:</span>
+					<span>Wai Yan Ng</span>
+				</div>
+				<div>
+					<span class="attributes">Email:</span>
+					<span><a href="mailto:wng27@myseneca.ca">wng27@myseneca.ca</a></span>
+				</div>
+				<div>
+					<span class="attributes">Language:</span>
+					<span>English, Cantonese, Mandarin</span>
+				</div>
+				<div>
+					<span class="attributes">Course:</span>
+					<span>WEB222</span>
+				</div>
+				<div>
+					<span class="attributes">Section:</span>
+					<span>ZAA</span>
+				</div>
+				<div>
+					<span class="attributes">Student ID:</span>
+					<span>149637217</span>
+				</div>
+				<div>
+					<span class="attributes">Instructor:</span>
+					<span>Dr. Muath Alzghool</span>
+				</div>
+			</article>
+		</section>
+		<!-- Education -->
+		<section id="education">
+			<h4>Education</h4>
+			<article id="seneca">
+				<div>
+					<img class="logo" src="./img/seneca.jpeg" alt="seneca school logo" />
+				</div>
+				<div>
+					<h5>Seneca College</h5>
+					<span>Diploma, Computer Programming</span>
+					<span>Jan 2022 - Ongoing</span>
+				</div>
+			</article>
+			<article id="thei">
+				<div>
+					<img class="logo" src="./img/thei.webp" alt="thei school logo" />
+				</div>
+				<div>
+					<h5>Technological and Higher Education Institute of Hong Kong</h5>
+					<span>Bachelor of Arts, Landscape Architecture</span>
+					<span>Sep 2017 - Sep 2021</span>
+				</div>
+			</article>
+		</section>
+		<!-- Contact Me -->
+		<section id="contactMe">
+			<form id="contact" action="https://httpbin.org/post" method="post">
+				<h4>Contact Me</h4>
+				<div id="contactInfo">
+					<div class="row">
+						<label for="Fname">First Name:</label>
+						<input
+							type="text"
+							id="name"
+							name="Fname"
+							placeholder="First Name"
+							required
+						/>
+					</div>
+					<div class="row">
+						<label for="Lname">Last Name:</label>
+						<input
+							type="text"
+							id="name"
+							name="Lname"
+							placeholder="Last Name"
+							required
+						/>
+					</div>
+					<div class="row">
+						<label for="email">Email:</label>
+						<input
+							type="email"
+							id="email"
+							name="email"
+							placeholder="example@example.com"
+							required
+						/>
+					</div>
+					<div class="row">
+						<label for="phone">Phone Number:</label>
+						<input
+							type="tel"
+							id="phone"
+							name="phone"
+							placeholder="xxx-xxx-xxxx"
+							required
+						/>
+						<span class="errorMsg"></span>
+					</div>
+					<div class="row">
+						<label for="address">Address:</label>
+						<input
+							type="text"
+							id="address"
+							name="address"
+							placeholder="Street Name"
+							required
+						/>
+					</div>
+					<div class="row">
+						<label for="city">City:</label>
+						<input
+							type="text"
+							id="city"
+							name="city"
+							list="cities"
+							placeholder="City"
+							required
+						/>
+						<datalist id="cities">
+							<option value="Ottawa"></option>
+							<option value="Edmonton"></option>
+							<option value="Winnipeg"></option>
+							<option value="Toronto"></option>
+							<option value="NorthYork"></option>
+							<option value="Markham"></option>
+						</datalist>
+					</div>
+					<div class="row">
+						<label for="province">Province:</label>
+						<select name="province" id="province" size="1">
+							<option value="AB">Alberta</option>
+							<option value="BC">British Columbia</option>
+							<option value="MB">Manitoba</option>
+							<option value="NB">New Brunswick</option>
+							<option value="NL">Newfoundland and Labrador</option>
+							<option value="NT">Northwest Territories</option>
+							<option value="NS">Nova Scotia</option>
+							<option value="NU">Nunavut</option>
+							<option value="ON" selected="">Ontario</option>
+							<option value="PE">Prince Edward Island</option>
+							<option value="QC">Quebec</option>
+							<option value="SK">Saskatchewan</option>
+							<option value="YT">Yukon</option>
+						</select>
+					</div>
+					<div class="row">
+						<label for="postalCode">Postal Code:</label>
+						<input type="text" id="postalCode" placeholder="A1A 1A1" required />
+						<span class="errorMsg"></span>
+					</div>
+				</div>
+				<div id="enquiry">
+					<span>What is your enquiry?</span>
+					<input
+						class="enquiry opt"
+						type="radio"
+						name="enqAns"
+						value="Question"
+						checked
+					/>
+					<label for="enqAns">Question</label>
+					<input
+						class="enquiry opt"
+						type="radio"
+						name="enqAns"
+						value="Comment"
+					/>
+					<label for="enqAns">Comment</label>
+					<input
+						id="hiring"
+						class="enquiry opt"
+						type="radio"
+						name="enqAns"
+						value="Hiring"
+					/>
+					<label for="enqAns">Hiring</label>
+				</div>
+				<div id="hourlyRate" class="hidden">
+					<label for="hourlyRateInput">HourlyRate:</label>
+					<input type="text" name="hourlyRateInput" />
+				</div>
+				<div id="messageBox">
+					<textarea
+						name="msg"
+						id="msg"
+						cols="45"
+						rows="5"
+						placeholder="Type Your Message Here...."
+					></textarea>
+				</div>
+				<input type="submit" class="btn" />
+				<input type="reset" id="reset" class="btn" />
+			</form>
+		</section>
+		<!-- Main App JavaScript File -->
+		<script src="./js/app.js"></script>
+	</body>
+</html>
